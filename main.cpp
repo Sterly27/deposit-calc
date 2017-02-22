@@ -33,16 +33,15 @@ using namespace std;
   if(s>=100000{
   if(d>0 && d<=30){
   s=s-s*0.1;
+  } else if(d>=31 && d<=120) {
+  s=s+s*0.03;
+  } else if(d>=121  && d<=240) {
+  s=s+s*0.08;
+  } else if(d>=241 && d<=365) {
+  s=s+s*0.15;
   }
   }
-  
-  
-  
-  
-  
-  
-  
-  
+  cout<<s<<endl;
   return 0;
   }
   
