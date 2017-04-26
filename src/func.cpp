@@ -2,29 +2,7 @@
 #include <cstdlib>
 #include <cstdio>
 
-using namespace std;
-
-void Reckoning(int* s, int* d)
-void Implement(int* s, int* d)
-
-int main(){
-	int s=0;
-	int d=0;
-
-	printf("enter s");
-	scanf("%d ",&s);
-	printf("enter d");
-	scanf("%d ",&d);
-	
-	Reckoning(&s,&d);
-	Implement(&s,&d); 
-	
-	printf("%d",s);
-	
-		return 0;
-	}
-
-    void Reckoning(int* s,int* d){
+void Reckoning(int* s,int* d){
 	if(*s < 10000|| *d<0 || *d>365) {
 	Reckoning(s, d);
 	}
@@ -59,9 +37,3 @@ int main(){
 		    		}
 		   } 
            			
-			
-		    
-	
-
-
-
