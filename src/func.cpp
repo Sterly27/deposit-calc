@@ -2,15 +2,16 @@
 #include <cstdlib>
 #include <cstdio>
 
-void Reckoning(int* s,int* d){
+int Reckoning(int* s,int* d){
 	if(*s < 10000|| *d<0 || *d>365) {
-	Reckoning(s, d);
+	return 1;
 	}
+	return 0;
 	}
 	
-	void Implement(int* s,int* d){
+	void Implement(int* s,int* d) {
 
-		if(*d > 0 && *d <= 30){
+		if(*d > 0 && *d <= 30) {
 		*s*=0.9;
 	}
 		if(*s<=100000) {

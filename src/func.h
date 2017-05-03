@@ -1,4 +1,4 @@
-void Reckoning(int* ,int*);
+int Reckoning(int* ,int*);
 void Implement(int* ,int*);
 
 	

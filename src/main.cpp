@@ -15,7 +15,7 @@ int main(){
 	cout<<"enter d";
 	cin>>d;
 	
-	Reckoning(&s,&d);
+	if (Reckoning(&s,&d)) {cout << "Error"; return 1;}
 	Implement(&s,&d); 
 	
 	printf("%d",s);
