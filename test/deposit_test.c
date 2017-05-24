@@ -32,7 +32,7 @@ CTEST(lessorequally100k, 106OK)
 }
 
 
-CTEST(lessorequally100k, 2106OK)
+CTEST(less_or_equally100k, number2_106OK)
 {
     int result = Implement(90000, 140);
     ASSERT_EQUAL(103032, result);
