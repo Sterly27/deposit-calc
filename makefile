@@ -14,6 +14,8 @@ all: $(SRS_BUILD)/main.o $(SRS_BUILD)/func.o
 
 $(SRS_BUILD)/main.o: src/main.c
 	mkdir -p build
+	mkdir -p build/src
+	mkdir -p build/test
 	$(CC) $(FLAGS) -c src/main.c -o $(SRS_BUILD)/main.o
 
 $(SRS_BUILD)/func.o: src/func.c
